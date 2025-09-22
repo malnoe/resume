@@ -22,7 +22,7 @@
       
     }
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
     .container {
       max-width: 1200px; 
@@ -36,20 +36,27 @@
     .item:last-child {
       border-bottom: none; /* Remove the line for the last item */
     }
+    .place-date {
+      padding: 0rem 0;
+      font-size: 0.9rem; /* Slightly smaller font for descriptions */
+      margin-bottom: 0.5rem; /* Reduce the space below the place-date */
+    }
     .text-muted {
+      padding: 0rem 0;
       color: #6c757d; /* Dark grey for descriptions */
       font-size: 0.9rem; /* Slightly smaller font for descriptions */
+      margin-top: 0; /* Remove extra space above the detail text */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header class="d-flex align-items-center mb-4" style="justify-content: flex-start;">
+    <header class="d-flex align-items-center mb-5" style="justify-content: flex-start;">
       <img src="photocv.png" alt="Photo de Garance Malnoë" class="rounded-circle" style="width: 180px; height: 180px; object-fit: cover; margin-left: 100px;margin-right: 100px;">
       <div>
         <h1>Garance Malnoë</h1>
         <p>Étudiante en M2 Statistiques et Sciences des données à l'UGA</p>
-        <p><a href="mailto:garance.malnoe@gmail.com">Contact mail</a> · <a href="https://www.linkedin.com/in/malnoegarance/">LinkedIn</a> · <a href="https://github.com/malnoe">GitHub</a></p>
+        <p><a href="mailto:garance.malnoe@gmail.com">Mail</a> · <a href="https://www.linkedin.com/in/malnoegarance/">LinkedIn</a> · <a href="https://github.com/malnoe">GitHub</a></p>
         <p><u>Langues :</u> Français (native), Anglais (C1 - 7.5 IELTS février 2023)</p>
         <p><u>Langages de programmation et logiciels :</u> R, Python, Julia, SQL, LaTeX, Git, PowerBI</p>
       </div>
@@ -59,15 +66,64 @@
       <h2>Formations</h2>
       <div class="item">
         <h3>Master 1-2 Statistiques et Sciences des données</h3>
-        <p class="text-muted">Université Grenoble Alpes (2024-2026)</p>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
       </div>
       <div class="item">
         <h3>Magistère 1 - Licence 3 Mathématiques fondamentales</h3>
-        <p class="text-muted">ENS Rennes (2023-2024)</p>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
       </div>
       <div class="item">
         <h3>Licence 1-2 Mathématiques et applications</h3>
-        <p class="text-muted">Université Rennes 1 (2021-2023)</p>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
+      </div>
+      <div class="item">
+        <h3>Baccalauréat</h3>
+        <p class="place-date">Lycée Joliot-Curie, Rennes (2018-2021)</p>
+        <p class="text-muted">Spécialités : Mathématiques, Physique-Chimie et Sciences de l'Ingénieur.
+          Option : Mathématiques expertes. 
+          Résultat : Mention très bien, félicitation du jury.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Stage et projets académiques</h2>
+      <div class="item">
+        <h3>Stage M1</h3>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
+      </div>
+      <div class="item">
+        <h3>Projet tutoré M1</h3>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
+      </div>
+      <div class="item">
+        <h3>Projet de datavisualisation - Petites villes de demain</h3>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
+      </div>
+      <div class="item">
+        <h3>Stage L2</h3>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
+      </div>
+      <div class="item">
+        <h3>Groupe de lecture de recherche L3</h3>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
+      </div>
+      <div class="item">
+        <h3>Stage L2</h3>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
+      </div>
+      <div class="item">
+        <h3>Stage L1</h3>
+        <p class="place-date">Place (202?-202?)</p>
+        <p class="text-muted">Détail</p>
       </div>
     </section>
 
@@ -92,49 +148,20 @@
     </section>
 
     <section class="section">
-      <h2>Stage et projets académiques</h2>
-      <div class="item">
-        <h3>Stage M1</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Projet tutoré M1</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Projet de datavisualisation - Petites villes de demain</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Stage L2</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Groupe de lecture de recherche L3</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Stage L2</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Stage L1</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-    </section>
-
-    <section class="section">
       <h2>Expériences professionnelles</h2>
       <div class="item">
         <h3>Agent des Services Hostpiraliers - Maison de retraite du Val de Chevré Juillet 2022 - Août 2022 - La Bouexière</h3>
+        <p class="place-date">Place (202?-202?)</p>
         <p class="text-muted">Détail</p>
       </div>
       <div class="item">
         <h3>Prise de notes pour le Pôle Vie Etudiante - PVE de l’Université Rennes 1</h3>
+        <p class="place-date">Place (202?-202?)</p>
         <p class="text-muted">Détail</p>
       </div>
       <div class="item">
         <h3>Agent administratif - Montfort Communauté Juillet 2021 - Montfort-sur-Meu</h3>
+        <p class="place-date">Place (202?-202?)</p>
         <p class="text-muted">Détail</p>
       </div>
     </section>
