@@ -1,196 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV – Garance Malnoë</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      padding: 2rem;
-      font-family: 'Open Sans', sans-serif;
-    }
-    h1, h2 {
-      margin-top: 1.5rem;
-    }
-    h2 {
-      font-size: 1.5rem; /* Section title size */
-      font-weight: bold;
-    }
-    h3 {
-      font-size: 1.2rem; /* Smaller than section title */
-      
-    }
-    .section {
-      margin-bottom: 2.5rem;
-    }
-    .container {
-      max-width: 1200px; 
-      margin: 0 auto; 
-      text-align: justify;
-    }
-    .item {
-      padding: 1rem 0;
-      border-bottom: 2px dotted #ccc; /* Line of dots between items */
-    }
-    .item:last-child {
-      border-bottom: none; /* Remove the line for the last item */
-    }
-    .place-date {
-      padding: 0rem 0;
-      font-size: 0.9rem; /* Slightly smaller font for descriptions */
-      margin-bottom: 0.5rem; /* Reduce the space below the place-date */
-    }
-    .text-muted {
-      padding: 0rem 0;
-      color: #6c757d; /* Dark grey for descriptions */
-      font-size: 0.9rem; /* Slightly smaller font for descriptions */
-      margin-top: 0; /* Remove extra space above the detail text */
-      margin-bottom: 0rem; /* Reduce the space below the place-date */
-    }
-  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Garance Malnoë - Accueil</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="icon" type="image/x-icon" href="icon.png">
 </head>
 <body>
-  <div class="container">
-    <header class="d-flex align-items-center mb-5" style="justify-content: flex-start;">
-      <img src="photocv.png" alt="Photo de Garance Malnoë" class="rounded-circle" style="width: 180px; height: 180px; object-fit: cover; margin-left: 100px;margin-right: 100px;">
-      <div>
-        <h1>Garance Malnoë</h1>
-        <p>Étudiante en M2 Statistiques et Sciences des données à l'UGA</p>
-        <p><a href="mailto:garance.malnoe@gmail.com">Mail</a> · <a href="https://www.linkedin.com/in/malnoegarance/">LinkedIn</a> · <a href="https://github.com/malnoe">GitHub</a></p>
-        <p><u>Langues :</u> Français (native), Anglais (C1 - 7.5 IELTS février 2023)</p>
-        <p><u>Langages de programmation et logiciels :</u> R, Python, Julia, SQL, LaTeX, Git, PowerBI</p>
-      </div>
-    </header>
+<div class="bandeau">
+  <img src="tregana.jpg" alt="Bandeau, vue de la plage de Tregana" style="width:100%;">
+</div>
+<nav>
+<ul>
+<li><a href="index.html" id="active">Accueil</a></li>
+<li><a href="CV.html">CV</a></li>
+<li><a href="recherche.html">Recherche</a></li>
+<li><a href="misc.html">Miscélanées</a></li>
+</ul>
+</nav>
+<div id="contenu">
+<p>
+<img src="photocv.png" id="maphoto" alt="Photo personnelle" style="width:10%;">
+<h1>Garance Malnoë</h1>
+<br>
+Bienvenue sur ma page personnelle ! Je suis actullement en stage ...
+</p>
 
-    <section class="section">
-      <h2>Formations</h2>
-      <div class="item">
-        <h3>Master Statistiques et Sciences des Données</h3>
-        <p class="place-date">Université Grenoble Alpes (Septembre 2024 - Actuellement)</p>
-        <p class="text-muted">Inférence statistique, ML, statistique computationnelle, statistique spatiale, NLP, GLM, modèles mixtes, probabilités, statistiques en grande dimension. 
-          Programmation (R, Python, Julia et SQL) et PowerBI. 
-          Major de promotion en M1.
-          Lauréate de la bourse EFELIA MIAI de l'Institut MIAI en M2.</p>
-      </div>
-      <div class="item">
-        <h3>Magistère 1 - Licence 3 Mathématiques fondamentales</h3>
-        <p class="place-date">École Normale Supérieure de Rennes & Université de Rennes (Septembre 2023 - Mai 2024)</p>
-        <p class="text-muted">Cours de la licence de mathématiques fondamentales avec des compléments d'introduction à la recherche.</p>
-      </div>
-      <div class="item">
-        <h3>Licence 1-2 Mathématiques et applications</h3>
-        <p class="place-date">Université de Rennes (Septembre 2021 - Mai 2023)</p>
-        <p class="text-muted">Minteure informatique.</p>
-      </div>
-      <div class="item">
-        <h3>Baccalauréat</h3>
-        <p class="place-date">Lycée Joliot-Curie, Rennes (Septembre 2018 - Juin 2021)</p>
-        <p class="text-muted">
-          Spécialités : Mathématiques, Physique-Chimie et Sciences de l'Ingénieur. Option : Mathématiques expertes. Résultat : Mention très bien, félicitation du jury.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Stage et projets académiques</h2>
-      <div class="item">
-        <h3>Stage de recherche - Méthodes de classification pour la résilience</h3>
-        <p class="place-date">Dalhousie University & Resilience Research Centre, Halifax, Canada (Mai - Août 2025, 3 mois)</p>
-        <p class="text-muted">
-          <li>
-            <ul>Lauréate de la bourse MITACS Globalink Research Internship.</ul>
-            <ul>Développement en R de méthodes de classification pour distinguer les réponses face à l'adversité en 3 profils “résilient”, “non-résilient” et “typique” pour des données transversales et longitudinales.</ul>  
-            <ul>Réalisation d'une revue de littérature, adaptation de méthodes existantes aux poblématiques de la résilience et conception de nouvelles approches en collaboration avec mon encadrant.</ul>
-            <ul>Co-rédaction d'un article scientifique en cours : responsable des sections méthodes et résultats.</ul>
-          </li>      
-        </p>
-      </div>
-      <div class="item">
-        <h3>Projet tutoré - Étude de la chute desmétéorites sur Terre</h3>
-        <p class="place-date">Master 1 (Janvier - Avril 2025)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Stage de recherche - Reconstruction de matrice Origine-Destination</h3>
-        <p class="place-date">Laboratoire de Mathématiques d'Orsay, Orsay  (Mai - Juin 2024, 6 semaines)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Groupe de lecture de recherche - Modélisation de dynamiques épidémiques par des EDO</h3>
-        <p class="place-date">Magistère 1 (Janvier - Avril 2024)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Stage en entreprise - Machine Learning pour la prévision d'échecs de production</h3>
-        <p class="place-date">Orange, Rennes (Mai - Août 2023, 3 mois)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Stage de recherche - Probabilités et statistiques</h3>
-        <p class="place-date">Institut de Recherche MAthématiques de Rennes, Rennes (Mai - Juin 2022, 6 semaines)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Distinctions académiques</h2>
-      <div class="item">
-        <h3>Bourse EFELIA-MIAI (2025)</h3>
-        <p class="text-muted">Détail - Master 2</p>
-      </div>
-      <div class="item">
-        <h3>Bourse MITACS Globalink Research Internship (2025)</h3>
-        <p class="text-muted">Détail - Stage de fin de Master 1</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Publication scientifique</h2>
-      <div class="item">
-        <h3>Article en cours d'écriture</h3>
-        <p class="text-muted">Détail</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Expériences professionnelles</h2>
-      <div class="item">
-        <h3>Agent des Services Hostpiraliers</h3>
-        <p class="place-date">Maison de retraite du Val de Chevré, La Bouexière (Juillet - Août 2022, 3 semaines)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Prise de notes pour le Pôle Vie Etudiante</h3>
-        <p class="place-date">PVE de l'Université de Rennes (Janvier - Mai 2022)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-      <div class="item">
-        <h3>Agent administratif</h3>
-        <p class="place-date">Montfort Communauté, Montfort-sur-Meu (Juillet 2021, 1 mois)</p>
-        <p class="text-muted">Détail</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Un peu plus sur moi</h2>
-      <div class="item">
-        <h3>Organisation des RJMI 2023-2024 à l'ENS Rennes</h3>
-        <p class="text-muted">Promotion des études de mathématiques et d'informatique au près de lycéennes</p>
-      </div>
-      <div class="item">
-        <h3>Jeu de rôle depuis une dizaine d'années</h3>
-      </div>
-      <div class="item">
-        <h3>Lecture, cuisine, jeux vidéos</h3>
-      </div>
-      <div class="item">
-        <h3>Membre du conseil de perfectionnement en licence de mathématiques</h3>
-      </div>
-    </section>
-
-    <footer class="mt-5 text-muted">
-      <p>Dernière mise à jour : septembre 2025</p>
-    </footer>
-  </div>
+<footer class="mt-5 text-muted">
+      <p>Dernière mise à jour : juillet 2026 - page en cours de construction.</p>
+</footer>
+</div>
 </body>
 </html>
