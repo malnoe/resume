@@ -1,67 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV – Garance Malnoë</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      padding: 2rem;
-      font-family: 'Open Sans', sans-serif;
-    }
-    h1, h2 {
-      margin-top: 1.5rem;
-    }
-    h2 {
-      font-size: 1.5rem; /* Section title size */
-      font-weight: bold;
-    }
-    h3 {
-      font-size: 1.2rem; /* Smaller than section title */
-      
-    }
-    .section {
-      margin-bottom: 2.5rem;
-    }
-    .container {
-      max-width: 1200px; 
-      margin: 0 auto; 
-      text-align: justify;
-    }
-    .item {
-      padding: 1rem 0;
-      border-bottom: 2px dotted #ccc; /* Line of dots between items */
-    }
-    .item:last-child {
-      border-bottom: none; /* Remove the line for the last item */
-    }
-    .place-date {
-      padding: 0rem 0;
-      font-size: 0.9rem; /* Slightly smaller font for descriptions */
-      margin-bottom: 0.5rem; /* Reduce the space below the place-date */
-    }
-    .text-muted {
-      padding: 0rem 0;
-      color: #6c757d; /* Dark grey for descriptions */
-      font-size: 0.9rem; /* Slightly smaller font for descriptions */
-      margin-top: 0; /* Remove extra space above the detail text */
-      margin-bottom: 0rem; /* Reduce the space below the place-date */
-    }
-  </style>
+<title>Accueil - Garance Malnoë</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/x-icon" href="images/icone.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-  <div class="container">
-    <header class="d-flex align-items-center mb-5" style="justify-content: flex-start;">
-      <img src="photocv.png" alt="Photo de Garance Malnoë" class="rounded-circle" style="width: 180px; height: 180px; object-fit: cover; margin-left: 100px;margin-right: 100px;">
-      <div>
-        <h1>Garance Malnoë</h1>
-        <p>Étudiante en M2 Statistiques et Sciences des données à l'UGA</p>
-        <p><a href="mailto:garance.malnoe@gmail.com">Mail</a> · <a href="https://www.linkedin.com/in/malnoegarance/">LinkedIn</a> · <a href="https://github.com/malnoe">GitHub</a></p>
-        <p><u>Langues :</u> Français (native), Anglais (C1 - 7.5 IELTS février 2023)</p>
-        <p><u>Langages de programmation et logiciels :</u> R, Python, Julia, SQL, LaTeX, Git, PowerBI</p>
-      </div>
-    </header>
+<div class="bandeau">
+  <img src="images/halifax_bandeau.jpg" alt="" style="width:100%;">
+</div> 
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="CV.html" id="active">CV</a></li>
+<li><a href="recherche.html">Recherche</a></li>
+<li><a href="misc.html">Miscellanées</a></li>
+</ul>
+</nav>
+<!-- FIN DE LA PARTIE COMMUNE -->
+<div id="contenu">
+<p>
+<h1>Garance Malnoë</h1>
+<p>Étudiante en M2 Statistiques et Sciences des données à l'UGA</p>
+<p><a href="mailto:garance.malnoe@gmail.com">Mail</a> · <a href="https://www.linkedin.com/in/malnoegarance/">LinkedIn</a> · <a href="https://github.com/malnoe">GitHub</a></p>
+<p><u>Langues :</u> Français (native), Anglais (C1 - 7.5 IELTS février 2023)</p>
+<p><u>Langages de programmation et logiciels :</u> R, Python, Julia, SQL, LaTeX, Git, PowerBI</p>
+</p>
 
     <section class="section">
       <h2>Formations</h2>
@@ -168,23 +133,6 @@
         <h3>Agent administratif</h3>
         <p class="place-date">Montfort Communauté, Montfort-sur-Meu (Juillet 2021, 1 mois)</p>
         <p class="text-muted">Détail</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Un peu plus sur moi</h2>
-      <div class="item">
-        <h3>Organisation des RJMI 2023-2024 à l'ENS Rennes</h3>
-        <p class="text-muted">Promotion des études de mathématiques et d'informatique au près de lycéennes</p>
-      </div>
-      <div class="item">
-        <h3>Jeu de rôle depuis une dizaine d'années</h3>
-      </div>
-      <div class="item">
-        <h3>Lecture, cuisine, jeux vidéos</h3>
-      </div>
-      <div class="item">
-        <h3>Membre du conseil de perfectionnement en licence de mathématiques</h3>
       </div>
     </section>
 

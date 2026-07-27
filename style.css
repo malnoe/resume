@@ -1,0 +1,152 @@
+body {
+font-family : Georgia, serif; /* police de
+caracteres */
+background-color : #F5F5F5; /* pas
+tout a fait blanc */
+min-width : 520px; /* si l'affichage
+est moins large que 520px alors celui du
+corps sera de 520px */
+margin : 0; /* on enleve les marges
+par defaut */
+padding : 0; /* de meme */
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.top-left {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  font-family : Ink free, Georgia, serif;
+  letter-spacing: 2px;
+  font-size: 250%;
+  font-weight: bold;
+}
+
+.bandeau {
+  position: static;
+  text-align: center;
+  color: white;
+  top: 0;
+}
+
+#maphoto
+{
+vertical-align: middle;
+float: right;
+width: 20%;
+height: auto;
+border-radius: 10%;
+margin-left: 5%;
+margin-bottom: 10%;
+border: 2px solid;
+}
+
+#cv_image
+{
+vertical-align: middle;
+float: right;
+width: 30%;
+height: auto;
+border-radius: 10%;
+margin-left: 5%;
+margin-bottom: 5%;
+margin-right: 0%;
+border: 2px solid;
+}
+
+#recherche_image
+{
+vertical-align: middle;
+float: left;
+width: 30%;
+height: auto;
+border-radius: 10%;
+margin-left: 0%;
+margin-bottom: 5%;
+margin-right: 5%;
+border: 2px solid;
+}
+
+#misc_image
+{
+vertical-align: middle;
+float: right;
+width: 30%;
+height: auto;
+border-radius: 10%;
+margin-left: 5%;
+margin-bottom: 5%;
+margin-right: 0%;
+border: 2px solid;
+}
+
+#contenu
+{
+background-color : #F5F5F5; /* font different */
+color : #003366;
+padding : 5% 10%; /* plus agreable a lire et au visuel */
+clear : both; /* pas concerne par les float donc retour a la ligne */
+border-top : 2px solid #DBE3EB; /* faire ressortir */
+/*border-bottom : 2px solid #DBE3EB;*/
+position: static;
+}
+
+a { /* style des liens */
+text-decoration : none; /* pas de soulignement */
+color : #0066CC;
+}
+a:hover {
+color : orange; /* pour ressortir quand survole */
+}
+
+p {
+text-align : justify; /* plus beau car bien aligne */
+}
+
+
+nav {
+text-align : right; /* tout doit etre a droite */
+}
+
+nav ul { /* liste dans la navigation */
+margin : 1% 10% 0 0;
+padding : 0; /* enleve l'indentation de defaut */
+float : right; /* colonne a droite par rapport au logo */
+position: fixed;
+top: 0;
+width: 90%;
+}
+
+nav ul li {
+display : inline-block; /* les elements de la liste sont presentes en ligne
+mais se comportent comme un block */
+}
+nav li a {
+display : block; /* les liens se comportent comme des block individuels,
+cela evite le chevauchement en cas de petite largeur d'ecran */
+padding : 1em;
+margin : 1em 0em;
+text-decoration : none; /* enleve le soulignement habituel des liens */
+letter-spacing : 1.3px; /* pour plus de lisibilite */
+font-size : 0.9em;
+color : #003366;
+background-color : #F5F5F5;
+}
+nav li a:hover { /* style des boutons de liens qu'on survole */
+background-color : gainsboro;
+color : #003366;
+font-weight : normal; /* car on a regle le cas general sur bold */
+}
+
+
+#active { /* element ayant l'id "active" */
+background-color : orange;
+color : #FFE5CC;
+}
