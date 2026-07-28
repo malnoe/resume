@@ -1,7 +1,7 @@
 body {
-font-family : Georgia, serif; /* police de
+font-family : Arial, sans-serif ; /* police de
 caracteres */
-background-color : #F5F5F5; /* pas
+background-color : #f8f2f0; /* pas
 tout a fait blanc */
 min-width : 520px; /* si l'affichage
 est moins large que 520px alors celui du
@@ -15,7 +15,7 @@ padding : 0; /* de meme */
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: #f8f2f0;
 }
 
 /* Bottom left text */
@@ -32,7 +32,7 @@ padding : 0; /* de meme */
 .bandeau {
   position: static;
   text-align: center;
-  color: white;
+  color: #f8f2f0;
   top: 0;
 }
 
@@ -40,11 +40,11 @@ padding : 0; /* de meme */
 {
 vertical-align: middle;
 float: right;
-width: 20%;
+width: 22%;
 height: auto;
 border-radius: 10%;
 margin-left: 5%;
-margin-bottom: 10%;
+margin-bottom: 5%;
 border: 2px solid;
 }
 
@@ -89,21 +89,24 @@ border: 2px solid;
 
 #contenu
 {
-background-color : #F5F5F5; /* font different */
+background-color : #f8f2f0; /* font different */
 color : #003366;
 padding : 5% 10%; /* plus agreable a lire et au visuel */
 clear : both; /* pas concerne par les float donc retour a la ligne */
-border-top : 2px solid #DBE3EB; /* faire ressortir */
 /*border-bottom : 2px solid #DBE3EB;*/
 position: static;
 }
 
 a { /* style des liens */
-text-decoration : none; /* pas de soulignement */
+text-decoration : underline; /* soulignement */
 color : #0066CC;
 }
 a:hover {
 color : orange; /* pour ressortir quand survole */
+}
+
+h1{
+  font-family : Gill Sans, sans-serif ;
 }
 
 p {
@@ -127,26 +130,52 @@ width: 90%;
 nav ul li {
 display : inline-block; /* les elements de la liste sont presentes en ligne
 mais se comportent comme un block */
+margin: 0.5em 0.2em;
 }
 nav li a {
 display : block; /* les liens se comportent comme des block individuels,
 cela evite le chevauchement en cas de petite largeur d'ecran */
 padding : 1em;
-margin : 1em 0em;
+margin : 0;
 text-decoration : none; /* enleve le soulignement habituel des liens */
 letter-spacing : 1.3px; /* pour plus de lisibilite */
 font-size : 0.9em;
 color : #003366;
 background-color : #F5F5F5;
+border: 2px solid #003366;
+border-radius: 12px;
+box-sizing: border-box;
 }
 nav li a:hover { /* style des boutons de liens qu'on survole */
 background-color : gainsboro;
 color : #003366;
 font-weight : normal; /* car on a regle le cas general sur bold */
 }
-
-
+nav li a#active {
+  border-color: #003366;
+  box-shadow: 0 0 0 1px rgba(0, 51, 102, 0.15);
+}
 #active { /* element ayant l'id "active" */
-background-color : orange;
-color : #FFE5CC;
+background-color : rgba(148, 211, 1, 0.986);
+color : white;
+}
+
+.contact-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-title .line {
+  border-top: 2px dotted #003366;
+}
+.contact-title .line-left {
+  width: 20px;       /* taille avant "Contact" */
+  flex-shrink: 0;
+}
+.contact-title .line-right {
+  flex: 1;
+  min-width: 0;
 }
