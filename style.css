@@ -113,6 +113,10 @@ p {
 text-align : justify; /* plus beau car bien aligne */
 }
 
+li {
+text-align : justify; /* plus beau car bien aligne */
+margin-left: 20px; /* décakage de la liste vers la droite pour ne pas chevaucher le texte*/
+}
 
 nav {
 text-align : right; /* tout doit etre a droite */
