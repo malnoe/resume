@@ -1,21 +1,17 @@
 body {
-font-family : Arial, sans-serif ; /* police de
-caracteres */
-background-color : #f8f2f0; /* pas
-tout a fait blanc */
-min-width : 520px; /* si l'affichage
-est moins large que 520px alors celui du
-corps sera de 520px */
-margin : 0; /* on enleve les marges
-par defaut */
+font-family : Arial, sans-serif ; /* police de caracteres */
+background-color : #fffbf4; /* pas tout a fait blanc */
+min-width : 520px; /* si l'affichage est moins large que 520px alors celui du corps sera de 520px */
+margin : 0; /* on enleve les marges par defaut */
 padding : 0; /* de meme */
+padding-top: 0em;
 }
 
 /* Container holding the image and the text */
 .container {
   position: relative;
   text-align: center;
-  color: #f8f2f0;
+  color: #fffbf4;
 }
 
 /* Bottom left text */
@@ -27,13 +23,6 @@ padding : 0; /* de meme */
   letter-spacing: 2px;
   font-size: 250%;
   font-weight: bold;
-}
-
-.bandeau {
-  position: static;
-  text-align: center;
-  color: #f8f2f0;
-  top: 0;
 }
 
 #maphoto
@@ -89,20 +78,19 @@ border: 2px solid;
 
 #contenu
 {
-background-color : #f8f2f0; /* font different */
 color : #003366;
-padding : 5% 10%; /* plus agreable a lire et au visuel */
+padding : 5% 5%; /* plus agreable a lire et au visuel */
 clear : both; /* pas concerne par les float donc retour a la ligne */
-/*border-bottom : 2px solid #DBE3EB;*/
+
 position: static;
 }
 
 a { /* style des liens */
 text-decoration : underline; /* soulignement */
-color : #0066CC;
+color : #003366;
 }
 a:hover {
-color : orange; /* pour ressortir quand survole */
+color : rgba(148, 211, 1, 0.986); /* pour ressortir quand survole */
 }
 
 h1{
@@ -119,23 +107,28 @@ margin-left: 20px; /* décakage de la liste vers la droite pour ne pas chevauche
 }
 
 nav {
-text-align : right; /* tout doit etre a droite */
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    background-image: url("images/halifax_bandeau.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-nav ul { /* liste dans la navigation */
-margin : 1% 10% 0 0;
-padding : 0; /* enleve l'indentation de defaut */
-float : right; /* colonne a droite par rapport au logo */
-position: fixed;
-top: 0;
-width: 90%;
+nav ul {
+    margin: 0;
+    padding: 3em 5%;
 }
 
 nav ul li {
-display : inline-block; /* les elements de la liste sont presentes en ligne
-mais se comportent comme un block */
-margin: 0.5em 0.2em;
+    display: inline-block;
+    margin: 0.5em 0.2em;
 }
+
 nav li a {
 display : block; /* les liens se comportent comme des block individuels,
 cela evite le chevauchement en cas de petite largeur d'ecran */
@@ -145,13 +138,13 @@ text-decoration : none; /* enleve le soulignement habituel des liens */
 letter-spacing : 1.3px; /* pour plus de lisibilite */
 font-size : 0.9em;
 color : #003366;
-background-color : #F5F5F5;
+background-color : #fffbf4;
 border: 2px solid #003366;
 border-radius: 12px;
 box-sizing: border-box;
 }
 nav li a:hover { /* style des boutons de liens qu'on survole */
-background-color : gainsboro;
+background-color : #e6e3dd;
 color : #003366;
 font-weight : normal; /* car on a regle le cas general sur bold */
 }
@@ -160,7 +153,7 @@ nav li a#active {
   box-shadow: 0 0 0 1px rgba(0, 51, 102, 0.15);
 }
 #active { /* element ayant l'id "active" */
-background-color : rgba(148, 211, 1, 0.986);
+background-color : rgba(140, 199, 1, 0.986);
 color : white;
 }
 
@@ -182,4 +175,26 @@ color : white;
 .contact-title .line-right {
   flex: 1;
   min-width: 0;
+}
+
+.sta301-section {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #003366;
+  background-color: #fff5ea;
+  border-radius: 4px;
+}
+
+.sta301-section h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.sta301-section ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sta301-section li {
+  margin-bottom: 0.6rem;
 }
