@@ -1,7 +1,7 @@
 body {
 font-family : Arial, sans-serif ; /* police de caracteres */
 background-color : #fffbf4; /* pas tout a fait blanc */
-min-width : 520px; /* si l'affichage est moins large que 520px alors celui du corps sera de 520px */
+min-width : 0;
 margin : 0; /* on enleve les marges par defaut */
 padding : 0; /* de meme */
 padding-top: 0em;
@@ -120,13 +120,18 @@ nav {
 }
 
 nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
     margin: 0;
-    padding: 3em 5%;
+  padding: 3em 5%;
+  gap: 0.5em;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0.5em 0.2em;
+  display: block;
+  margin: 0;
 }
 
 nav li a {
